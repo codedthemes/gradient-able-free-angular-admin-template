@@ -1,10 +1,10 @@
-# Datta Able Angular 9 Free Admin Dashboard
+# Gradient Able Angular 9 Free Admin Dashboard
 
-Datta Able dashboard template built using Angular 9 with Bootstrap 4 framework, It is a free lite version of [Datta Able Angular](https://codedthemes.com/item/datta-able-angular-lite) Dashboard Template will complete your admin dashboard needs.
+Gradient Able dashboard template built using Angular 9 with Bootstrap 4 framework, It is a free lite version of [Gradient Able Angular](https://codedthemes.com/item/gradient-able-angular-free-admin-template/) Dashboard Template will complete your admin dashboard needs.
 
-<!--- ![Datta Able Angular Free Admin Template Preview Image](...) --->
+<!--- ![Gradient Able Angular Free Admin Template Preview Image](...) --->
 
-Datta Able Angular Free Admin Template comes with variety of components like Button, Badges, Breadcrumb, Pagination, Collapse, Tabs & Pills, Form Elements, Table, Charts & Authentication Pages.
+Gradient Able Angular Free Admin Template comes with variety of components like Button, Badges, Breadcrumb, Pagination, Collapse, Tabs & Pills, Form Elements, Table, Charts & Authentication Pages.
 
 The code structure is highly flexible to use and modify. 
 
@@ -18,27 +18,27 @@ Wish you happy to use our product in your project.
 
 ## Free Version Preview & Download
 
-Check out live preview of Datta Able Angular Lite version & download it.
+Check out live preview of Gradient Able Angular Lite version & download it.
 
 #### Preview
 
- - [Demo](http://lite.codedthemes.com/datta-able/angular/dashboard/default)
+ - [Demo](http://lite.codedthemes.com/gradient-able/angular/dashboard/analytics)
 
 #### Download
 
- - [Download from Github](https://github.com/codedthemes/datta-able-free-angular-admin-template.git)
- - [Download from CodedThemes](https://codedthemes.com/item/datta-able-angular-lite) & receive important notification instantly in your maiL.
+ - [Download from Github](https://github.com/codedthemes/gradient-able-free-angular-admin-template.git)
+ - [Download from CodedThemes](https://codedthemes.com/item/category/free-templates/free-angular-admin-templates/) & receive important notification instantly in your maiL.
  
  ## Premium Version Preview & Download
 
-Datta Able Admin Template is available to purchase. Visit its numerous demos and make your purchase decision.
+Gradient Able Admin Template is available to purchase. Visit its numerous demos and make your purchase decision.
 #### Preview
 
- - [Demo](http://html.codedthemes.com/datta-able/angular/default/dashboard/default)
+ - [Demo](http://html.codedthemes.com/gradient-able/angular/default/)
 
 #### Download
 
- - [Purchase from CodedThemes](https://codedthemes.com/item/datta-able-angular/)
+ - [Purchase from CodedThemes](https://codedthemes.com/item/gradient-able-angular-admin-template/)
 
 ## Table of contents
 
@@ -58,7 +58,7 @@ Datta Able Admin Template is available to purchase. Visit its numerous demos and
 
 Clone from Github 
 ```
-git clone https://github.com/codedthemes/datta-able-free-angular-admin-template.git
+git clone https://github.com/codedthemes/gradient-able-free-angular-admin-template.git
 ```
 #### Terminal Commands
 
@@ -73,15 +73,15 @@ This project was generated with Angular CLI version 9.0.2 and angular 9.x.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README] (https://github.com/angular/angular-cli/blob/master/README.md).
 
-*no other dependencies required to run the Datta Able Admin Dashboard*
+*no other dependencies required to run the Gradient Able Admin Dashboard*
 
 ## Online Documentation
 
-Datta Able Lite version documentation cover in its Pro version documentation - check our [website.](http://html.codedthemes.com/datta-able/angular/docs)
+Gradient Able Lite version documentation cover in its Pro version documentation - check our [website.](https://codedthemes-2.gitbook.io/gradient-able-angular/)
 
 ## Build With
 
- - [Angular CLI](https://github.com/angular/angular-cli) 9.0.2
+ - [Angular CLI](https://github.com/angular/angular-cli) 9.0.4
  - [Latest Bootstrap 4 Stable](https://getbootstrap.com/)
  - [SASS Powered](https://sass-lang.com/)
  - [NodeJs](https://nodejs.org/en/) v12.0.0
@@ -89,7 +89,7 @@ Datta Able Lite version documentation cover in its Pro version documentation - c
 
 ## Directory Structure
 ```
-datta-able/
+gradient-able/
 ├── e2e
 |    ├── src/
 |   |   ├── app/
@@ -149,7 +149,7 @@ datta-able/
 
 ####RoadMap
     
-We are continuously working in Datta Able Angular Project and going to make it a awesome angular admin dashboard template via your support. Give us the ideas, suggestion for include more components, pages, plugins. Few of future release pages are
+We are continuously working in Gradient Able Angular Project and going to make it a awesome angular admin dashboard template via your support. Give us the ideas, suggestion for include more components, pages, plugins. Few of future release pages are
  
 #### Layouts 
  - Vertical version
@@ -184,7 +184,7 @@ Design and code is completely written by CodedThemes's design and development te
 
 <!--- ## Contributing
 ```
-Please read [CONTRIBUTING.md](https://github.com/codedthemes/datta-able-bootstrap-dashboard/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us. --->
+Please read [CONTRIBUTING.md](https://github.com/codedthemes/gradient-able-bootstrap-dashboard/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us. --->
 
 ## Issues
 
@@ -192,7 +192,7 @@ Please generate Github issue if you found bug in any version. We are try to be r
 
 ## License
 
- - Licensed cover under [MIT](https://github.com/codedthemes/datta-able-free-angular-admin-template/blob/master/LICENSE)
+ - Licensed cover under [MIT](https://github.com/codedthemes/gradient-able-free-angular-admin-template/blob/master/LICENSE)
 
 ## Other Dashboard Products
 

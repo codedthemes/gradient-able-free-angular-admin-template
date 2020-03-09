@@ -1,7 +1,7 @@
 import {Component, DoCheck, OnInit} from '@angular/core';
 import {NgbDropdownConfig} from '@ng-bootstrap/ng-bootstrap';
 import {animate, style, transition, trigger} from '@angular/animations';
-import {DattaConfig} from '../../../../../app-config';
+import {GradientConfig} from '../../../../../app-config';
 
 @Component({
   selector: 'app-nav-right',
@@ -33,28 +33,26 @@ export class NavRightComponent implements OnInit, DoCheck {
   public visibleUserList: boolean;
   public chatMessage: boolean;
   public friendId: boolean;
-  public dattaConfig: any;
+  public gradientConfig: any;
 
-  constructor(config: NgbDropdownConfig) {
-    config.placement = 'bottom-right';
+  constructor() {
     this.visibleUserList = false;
     this.chatMessage = false;
-    this.dattaConfig = DattaConfig.config;
+    this.gradientConfig = GradientConfig.config;
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
-  onChatToggle(friend_id) {
-    this.friendId = friend_id;
+  onChatToggle(friendID) {
+    this.friendId = friendID;
     this.chatMessage = !this.chatMessage;
   }
 
   ngDoCheck() {
-    if (document.querySelector('body').classList.contains('datta-rtl')) {
-      this.dattaConfig['rtl-layout'] = true;
+    if (document.querySelector('body').classList.contains('elite-rtl')) {
+      this.gradientConfig['rtl-layout'] = true;
     } else {
-      this.dattaConfig['rtl-layout'] = false;
+      this.gradientConfig['rtl-layout'] = false;
     }
   }
 }

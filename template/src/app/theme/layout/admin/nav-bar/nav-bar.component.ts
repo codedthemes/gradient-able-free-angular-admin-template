@@ -1,5 +1,5 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {DattaConfig} from '../../../../app-config';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {GradientConfig} from '../../../../app-config';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,28 +7,34 @@ import {DattaConfig} from '../../../../app-config';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
-  @Output() onNavCollapsedMob = new EventEmitter();
-  public dattaConfig: any;
-  public navCollapsedMob;
-  public headerStyle: string;
+  public gradientConfig: any;
   public menuClass: boolean;
   public collapseStyle: string;
+  public windowWidth: number;
+
+  @Output() onNavCollapse = new EventEmitter();
+  @Output() onNavHeaderMobCollapse = new EventEmitter();
 
   constructor() {
-    this.dattaConfig = DattaConfig.config;
-    this.navCollapsedMob = false;
-    this.headerStyle = '';
+    this.gradientConfig = GradientConfig.config;
     this.menuClass = false;
     this.collapseStyle = 'none';
+    this.windowWidth = window.innerWidth;
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   toggleMobOption() {
     this.menuClass = !this.menuClass;
-    this.headerStyle = (this.menuClass) ? 'none' : '';
     this.collapseStyle = (this.menuClass) ? 'block' : 'none';
+  }
+
+  navCollapse() {
+    if (this.windowWidth >= 992) {
+      this.onNavCollapse.emit();
+    } else {
+      this.onNavHeaderMobCollapse.emit();
+    }
   }
 
 }

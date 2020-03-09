@@ -1,7 +1,7 @@
 import {Component, Input, NgZone, OnInit} from '@angular/core';
 import {NavigationItem} from '../../navigation';
 import {Location} from '@angular/common';
-import {DattaConfig} from '../../../../../../app-config';
+import {GradientConfig} from '../../../../../../app-config';
 
 @Component({
   selector: 'app-nav-group',
@@ -10,10 +10,12 @@ import {DattaConfig} from '../../../../../../app-config';
 })
 export class NavGroupComponent implements OnInit {
   @Input() item: NavigationItem;
-  public dattaConfig: any;
+  @Input() layout1: boolean = false;
+  @Input() activeId: any;
+  public gradientConfig: any;
 
   constructor(private zone: NgZone, private location: Location) {
-    this.dattaConfig = DattaConfig.config;
+    this.gradientConfig = GradientConfig.config;
   }
 
   ngOnInit() {
@@ -29,17 +31,17 @@ export class NavGroupComponent implements OnInit {
       const up_parent = parent.parentElement.parentElement;
       const last_parent = up_parent.parentElement;
       if (parent.classList.contains('pcoded-hasmenu')) {
-        if (this.dattaConfig['layout'] === 'vertical') {
+        if (this.gradientConfig['layout'] === 'vertical') {
           parent.classList.add('pcoded-trigger');
         }
         parent.classList.add('active');
       } else if(up_parent.classList.contains('pcoded-hasmenu')) {
-        if (this.dattaConfig['layout'] === 'vertical') {
+        if (this.gradientConfig['layout'] === 'vertical') {
           up_parent.classList.add('pcoded-trigger');
         }
         up_parent.classList.add('active');
       } else if (last_parent.classList.contains('pcoded-hasmenu')) {
-        if (this.dattaConfig['layout'] === 'vertical') {
+        if (this.gradientConfig['layout'] === 'vertical') {
           last_parent.classList.add('pcoded-trigger');
         }
         last_parent.classList.add('active');

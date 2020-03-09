@@ -1,11 +1,27 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {TblBootstrapComponent} from './tbl-bootstrap.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: TblBootstrapComponent
+    children: [
+      {
+        path: 'bt-basic',
+        loadChildren: () => import('./tbl-basic/tbl-basic.module').then(module => module.TblBasicModule)
+      },
+      {
+        path: 'bt-border',
+        loadChildren: () => import('./tbl-border/tbl-border.module').then(module => module.TblBorderModule)
+      },
+      {
+        path: 'bt-sizing',
+        loadChildren: () => import('./tbl-sizing/tbl-sizing.module').then(module => module.TblSizingModule)
+      },
+      {
+        path: 'bt-styling',
+        loadChildren: () => import('./tbl-styling/tbl-styling.module').then(module => module.TblStylingModule)
+      }
+    ]
   }
 ];
 

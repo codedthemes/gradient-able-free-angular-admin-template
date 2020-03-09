@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Observable} from 'rxjs/Observable';
+import {Observable} from 'rxjs';
 import {IOption} from 'ng-select';
 
 @Injectable()
@@ -261,6 +261,10 @@ export class SelectOptionService {
     {value: 'ZW', label: 'Zimbabwe'}
   ];
 
+  public cloneOptions(options: Array<IOption>): Array<IOption> {
+    return options.map(option => ({ value: option.value, label: option.label }));
+  }
+
     getCharacters(): Array<IOption> {
         return this.cloneOptions(SelectOptionService.PLAYER_ONE);
     }
@@ -291,9 +295,5 @@ export class SelectOptionService {
                 obs.complete();
             }, 5000);
         });
-    }
-
-    private cloneOptions(options: Array<IOption>): Array<IOption> {
-        return options.map(option => ({ value: option.value, label: option.label }));
     }
 }

@@ -7,7 +7,6 @@ import {NavigationEnd, Router} from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'datta-able';
 
   constructor(private router: Router) { }
 
@@ -19,5 +18,4 @@ export class AppComponent implements OnInit {
       window.scrollTo(0, 0);
     });
   }
-
 }

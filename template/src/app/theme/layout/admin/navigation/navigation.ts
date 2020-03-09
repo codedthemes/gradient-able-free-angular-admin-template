@@ -30,15 +30,37 @@ const NavigationItems = [
     id: 'navigation',
     title: 'Navigation',
     type: 'group',
-    icon: 'icon-navigation',
+    icon: 'feather icon-monitor',
     children: [
       {
         id: 'dashboard',
         title: 'Dashboard',
         type: 'item',
-        url: '/dashboard/default',
+        url: '/dashboard/analytics',
         icon: 'feather icon-home',
-        classes: 'nav-item',
+        breadcrumbs: false
+      },
+      {
+        id: 'page-layouts',
+        title: 'Page Layouts',
+        type: 'collapse',
+        icon: 'feather icon-layout',
+        children: [
+          {
+            id: 'vertical',
+            title: 'Vertical',
+            type: 'item',
+            url: '/layout/static',
+            target: true
+          },
+          {
+            id: 'horizontal',
+            title: 'Horizontal',
+            type: 'item',
+            url: '/layout/horizontal',
+            target: true
+          }
+        ]
       }
     ]
   },
@@ -46,14 +68,20 @@ const NavigationItems = [
     id: 'ui-element',
     title: 'UI ELEMENT',
     type: 'group',
-    icon: 'icon-ui',
+    icon: 'feather icon-layers',
     children: [
       {
         id: 'basic',
-        title: 'Component',
+        title: 'Basic',
         type: 'collapse',
         icon: 'feather icon-box',
         children: [
+          {
+            id: 'alert',
+            title: 'Alert',
+            type: 'item',
+            url: '/basic/alert'
+          },
           {
             id: 'button',
             title: 'Button',
@@ -68,15 +96,51 @@ const NavigationItems = [
           },
           {
             id: 'breadcrumb-pagination',
-            title: 'Breadcrumb & Pagination',
+            title: 'Breadcrumbs & Pagination',
             type: 'item',
             url: '/basic/breadcrumb-paging'
+          },
+          {
+            id: 'cards',
+            title: 'Cards',
+            type: 'item',
+            url: '/basic/cards'
           },
           {
             id: 'collapse',
             title: 'Collapse',
             type: 'item',
             url: '/basic/collapse'
+          },
+          {
+            id: 'carousel',
+            title: 'Carousel',
+            type: 'item',
+            url: '/basic/carousel'
+          },
+          {
+            id: 'grid-system',
+            title: 'Grid System',
+            type: 'item',
+            url: '/basic/grid-system'
+          },
+          {
+            id: 'progress',
+            title: 'Progress',
+            type: 'item',
+            url: '/basic/progress'
+          },
+          {
+            id: 'modal',
+            title: 'Modal',
+            type: 'item',
+            url: '/basic/modal'
+          },
+          {
+            id: 'spinner',
+            title: 'Spinner',
+            type: 'item',
+            url: '/basic/spinner'
           },
           {
             id: 'tabs-pills',
@@ -89,31 +153,47 @@ const NavigationItems = [
             title: 'Typography',
             type: 'item',
             url: '/basic/typography'
+          },
+          {
+            id: 'tooltip-popovers',
+            title: 'Tooltip & Popovers',
+            type: 'item',
+            url: '/basic/tooltip-popovers'
+          },
+          {
+            id: 'toasts',
+            title: 'Toasts',
+            type: 'item',
+            url: '/basic/toasts'
+          },
+          {
+            id: 'other',
+            title: 'Other',
+            type: 'item',
+            url: '/basic/other'
           }
         ]
       }
     ]
   },
   {
-    id: 'forms',
+    id: 'forms-tables',
     title: 'Forms & Tables',
     type: 'group',
-    icon: 'icon-group',
+    icon: 'feather icon-layout',
     children: [
       {
         id: 'forms-element',
-        title: 'Form Elements',
+        title: 'Forms',
         type: 'item',
         url: '/forms/basic',
-        classes: 'nav-item',
         icon: 'feather icon-file-text'
       },
       {
-        id: 'tables',
-        title: 'Tables',
+        id: 'bootstrap',
+        title: 'Table',
         type: 'item',
-        url: '/tables/bootstrap',
-        classes: 'nav-item',
+        url: '/tbl-bootstrap/bt-basic',
         icon: 'feather icon-server'
       }
     ]
@@ -122,15 +202,21 @@ const NavigationItems = [
     id: 'chart-maps',
     title: 'Chart & Maps',
     type: 'group',
-    icon: 'icon-charts',
+    icon: 'feather icon-pie-chart',
     children: [
       {
         id: 'charts',
         title: 'Charts',
         type: 'item',
-        url: '/charts/morris',
-        classes: 'nav-item',
+        url: '/charts/apex',
         icon: 'feather icon-pie-chart'
+      },
+      {
+        id: 'maps',
+        title: 'Maps',
+        type: 'item',
+        url: '/maps/google',
+        icon: 'feather icon-map'
       }
     ]
   },
@@ -138,7 +224,7 @@ const NavigationItems = [
     id: 'pages',
     title: 'Pages',
     type: 'group',
-    icon: 'icon-pages',
+    icon: 'feather icon-file-text',
     children: [
       {
         id: 'auth',
@@ -171,25 +257,6 @@ const NavigationItems = [
         url: '/sample-page',
         classes: 'nav-item',
         icon: 'feather icon-sidebar'
-      },
-      {
-        id: 'disabled-menu',
-        title: 'Disabled Menu',
-        type: 'item',
-        url: 'javascript:',
-        classes: 'nav-item disabled',
-        icon: 'feather icon-power',
-        external: true
-      },
-      {
-        id: 'buy_now',
-        title: 'Buy Now',
-        type: 'item',
-        icon: 'feather icon-book',
-        classes: 'nav-item',
-        url: 'https://codedthemes.com/item/datta-able-angular/',
-        target: true,
-        external: true
       }
     ]
   }
@@ -197,7 +264,7 @@ const NavigationItems = [
 
 @Injectable()
 export class NavigationItem {
-  get() {
+  public get() {
     return NavigationItems;
   }
 }

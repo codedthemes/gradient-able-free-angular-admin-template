@@ -6,8 +6,8 @@ const routes: Routes = [
     path: '',
     children: [
       {
-        path: 'default',
-        loadChildren: () => import('./default/default.module').then(m => m.DefaultModule)
+        path: 'analytics',
+        loadChildren: () => import('./dash-analytics/dash-analytics.module').then(module => module.DashAnalyticsModule)
       }
     ]
   }

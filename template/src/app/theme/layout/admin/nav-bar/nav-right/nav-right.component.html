@@ -1,7 +1,7 @@
-<ul class="navbar-nav">
+<ul class="navbar-nav ml-auto">
   <li>
     <div class="dropdown" ngbDropdown placement="auto">
-      <a ngbDropdownToggle href="javascript:" data-toggle="dropdown"><i class="icon feather icon-bell"></i></a>
+      <a ngbDropdownToggle href="javascript:" data-toggle="dropdown"><i class="icon feather icon-bell"></i><span class="badge bg-danger"><span class="sr-only"></span></span></a>
       <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right notification">
         <div class="noti-head">
           <h6 class="d-inline-block m-b-0">Notifications</h6>
@@ -18,7 +18,7 @@
             <div class="media">
               <img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
               <div class="media-body">
-                <p><strong>John Doe</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>now</span></p>
+                <p><strong>John Doe</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
                 <p>New ticket Added</p>
               </div>
             </div>
@@ -30,8 +30,8 @@
             <div class="media">
               <img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
               <div class="media-body">
-                <p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>10 min</span></p>
-                <p>Prchace New Theme and make payment</p>
+                <p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
+                <p>Purchase New Theme and make payment</p>
               </div>
             </div>
           </li>
@@ -51,10 +51,17 @@
       </div>
     </div>
   </li>
+  <li (click)="this.visibleUserList = !this.visibleUserList;">
+    <div class="dropdown">
+      <a href="javascript:" class="displayChatbox dropdown-toggle">
+        <i class="icon feather icon-mail"></i><span class="badge bg-success"><span class="sr-only"></span></span>
+      </a>
+    </div>
+  </li>
   <li>
-    <div class="dropdown drp-user" ngbDropdown placement='auto'>
+    <div class="dropdown drp-user" ngbDropdown placement="auto">
       <a href="javascript:" ngbDropdownToggle data-toggle="dropdown">
-        <i class="icon feather icon-settings"></i>
+        <img src="assets/images/user/avatar-1.jpg" class="img-radius wid-40" alt="User-Profile-Image">
       </a>
       <div class="dropdown-menu dropdown-menu-right profile-notification" ngbDropdownMenu>
         <div class="pro-head">
@@ -65,7 +72,6 @@
           </a>
         </div>
         <ul class="pro-body">
-          <li><a href="javascript:" class="dropdown-item"><i class="feather icon-settings"></i> Settings</a></li>
           <li><a href="javascript:" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
           <li><a href="javascript:" class="dropdown-item"><i class="feather icon-mail"></i> My Messages</a></li>
           <li><a href="javascript:" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>
@@ -74,3 +80,19 @@
     </div>
   </li>
 </ul>
+
+<section class="header-user-list" *ngIf="visibleUserList && !this.gradientConfig['rtl-layout']" [ngClass]="{'open': visibleUserList}" [@slideInOutLeft]>
+  <app-chat-user-list (onChatToggle)="onChatToggle($event)" (onChatCollapse)="this.visibleUserList = !this.visibleUserList; this.chatMessage = false;"></app-chat-user-list>
+</section>
+
+<section class="header-chat" *ngIf="chatMessage && !this.gradientConfig['rtl-layout']" [ngClass]="{'open': chatMessage}" [@slideInOutLeft]>
+  <app-chat-msg (onChatToggle)="this.chatMessage = !this.chatMessage" [friendId]="friendId"></app-chat-msg>
+</section>
+
+<section class="header-user-list" *ngIf="visibleUserList && this.gradientConfig['rtl-layout']" [ngClass]="{'open': visibleUserList}" [@slideInOutRight]>
+  <app-chat-user-list (onChatToggle)="onChatToggle($event)" (onChatCollapse)="this.visibleUserList = !this.visibleUserList; this.chatMessage = false;"></app-chat-user-list>
+</section>
+
+<section class="header-chat" *ngIf="chatMessage && this.gradientConfig['rtl-layout']" [ngClass]="{'open': chatMessage}" [@slideInOutRight]>
+  <app-chat-msg (onChatToggle)="this.chatMessage = !this.chatMessage" [friendId]="friendId"></app-chat-msg>
+</section>

@@ -146,11 +146,11 @@ gradient-able/
 |    ├── tslint.json
 ├── ... More
 ```
-
+<!---
 ####RoadMap
     
 We are continuously working in Gradient Able Angular Project and going to make it a awesome angular admin dashboard template via your support. Give us the ideas, suggestion for include more components, pages, plugins. Few of future release pages are
- 
+ --->
 #### Layouts 
  - Vertical version
     - Static

@@ -2,8 +2,6 @@
 
 Gradient Able dashboard template built using Angular 9 with Bootstrap 4 framework, It is a free lite version of [Gradient Able Angular](https://codedthemes.com/item/gradient-able-angular-free-admin-template/) Dashboard Template will complete your admin dashboard needs.
 
-<!--- ![Gradient Able Angular Free Admin Template Preview Image](...) --->
-
 Gradient Able Angular Free Admin Template comes with variety of components like Button, Badges, Breadcrumb, Pagination, Collapse, Tabs & Pills, Form Elements, Table, Charts & Authentication Pages.
 
 The code structure is highly flexible to use and modify. 
@@ -26,15 +24,16 @@ Check out live preview of Gradient Able Angular Lite version & download it.
 
 #### Download
 
- - [Download from Github](https://github.com/codedthemes/gradient-able-free-angular-admin-template.git)
- - [Download from CodedThemes](https://codedthemes.com/item/category/free-templates/free-angular-admin-templates/) & receive important notification instantly in your maiL.
+ - [Download from Github](https://github.com/codedthemes/gradient-able-free-angular-admin-template)
+ - [Download from CodedThemes](https://codedthemes.com/item/gradient-able-angular-free-admin-template/) & receive important notification instantly in your maiL.
  
  ## Premium Version Preview & Download
 
 Gradient Able Admin Template is available to purchase. Visit its numerous demos and make your purchase decision.
+
 #### Preview
 
- - [Demo](http://html.codedthemes.com/gradient-able/angular/default/)
+ - [Demo](https://codedthemes.com/demos/admin-templates/gradient-able/angular/)
 
 #### Download
 
@@ -48,7 +47,6 @@ Gradient Able Admin Template is available to purchase. Visit its numerous demos 
  * [Directory Structure](#directory-structure)
  * [RoadMap](#roadmap)
  * [Author](#author)
- <!--- * [Contributing](#contributing) --->
  * [Issues?](#issues)
  * [License](#license)
  * [Other Dashboard Products](#other-dashboard-products)
@@ -146,11 +144,7 @@ gradient-able/
 |    ├── tslint.json
 ├── ... More
 ```
-<!---
-####RoadMap
-    
-We are continuously working in Gradient Able Angular Project and going to make it a awesome angular admin dashboard template via your support. Give us the ideas, suggestion for include more components, pages, plugins. Few of future release pages are
- --->
+
 #### Layouts 
  - Vertical version
     - Static
@@ -182,10 +176,6 @@ We are continuously working in Gradient Able Angular Project and going to make i
 
 Design and code is completely written by CodedThemes's design and development team. We are happy to welcome the contributors work for our all repositories.
 
-<!--- ## Contributing
-```
-Please read [CONTRIBUTING.md](https://github.com/codedthemes/gradient-able-bootstrap-dashboard/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us. --->
-
 ## Issues
 
 Please generate Github issue if you found bug in any version. We are try to be responsive to resolve the issue.
@@ -197,12 +187,11 @@ Please generate Github issue if you found bug in any version. We are try to be r
 ## Other Dashboard Products
 
  - [Free Bootstrap 4 Admin Template](https://codedthemes.com/item/category/free-templates/free-bootstrap-admin-templates)
-  - [Free React Dashboard Template](https://codedthemes.com/item/category/free-templates/free-react-admin-templates)
-  - [Free Angular Dashboard Template](https://codedthemes.com/item/category/free-templates/free-angular-admin-templates)
-  - [Premium Bootstrap & Angular & React Admin Template](https://codedthemes.com/item/category/templates/admin-templates/)
+ - [Free React Dashboard Template](https://codedthemes.com/item/category/free-templates/free-react-admin-templates)
+ - [Free Angular Dashboard Template](https://codedthemes.com/item/category/free-templates/free-angular-admin-templates)
+ - [Premium Bootstrap & Angular Admin Template](https://codedthemes.com/item/category/templates/admin-templates/)
  
 ## Social Profiles
-
  - Dribbble [https://dribbble.com/codedthemes](https://dribbble.com/codedthemes)
  - Behance [https://www.behance.net/codedthemes](https://www.behance.net/codedthemes)
  - Facebook [https://www.facebook.com/codedthemes](https://www.facebook.com/codedthemes)

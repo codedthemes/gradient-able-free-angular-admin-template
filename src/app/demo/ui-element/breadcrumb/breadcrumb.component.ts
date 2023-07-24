@@ -8,6 +8,4 @@ import { CommonModule } from '@angular/common';
   templateUrl: './breadcrumb.component.html',
   styleUrls: ['./breadcrumb.component.scss']
 })
-export default class BreadcrumbComponent {
-
-}
+export default class BreadcrumbComponent {}

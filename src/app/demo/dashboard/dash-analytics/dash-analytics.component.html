@@ -3,9 +3,12 @@
   <div class="col-md-6 col-xl-3" *ngFor="let card of cards">
     <app-card [hidHeader]="true" cardClass="{{ card.background }} order-card">
       <h6 class="text-white">{{ card.title }}</h6>
-      <h2 class="text-end text-white"><i class="feather {{ card.icon }} float-start"></i><span>{{ card.number }}</span>
+      <h2 class="text-end text-white"
+        ><i class="feather {{ card.icon }} float-start"></i><span>{{ card.number }}</span>
       </h2>
-      <p class="m-b-0">{{ card.text }}<span class="float-end">{{ card.no }}</span></p>
+      <p class="m-b-0"
+        >{{ card.text }}<span class="float-end">{{ card.no }}</span></p
+      >
     </app-card>
   </div>
   <!-- order-card end -->
@@ -14,15 +17,15 @@
   <div class="col-xl-6 col-md-12">
     <app-card cardTitle="Unique Visitor" [options]="false">
       <apx-chart
-      [chart]="chartOptions.chart!"
-      [dataLabels]="chartOptions.dataLabels!"
-      [stroke]="chartOptions.stroke!"
-      [series]="chartOptions.series!"
-      [xaxis]="chartOptions.xaxis!"
-      [colors]="chartOptions.colors!"
-      [fill]="chartOptions.fill!"
-      [markers]="chartOptions.markers!"
-      [yaxis]="chartOptions.yaxis!"
+        [chart]="chartOptions.chart!"
+        [dataLabels]="chartOptions.dataLabels!"
+        [stroke]="chartOptions.stroke!"
+        [series]="chartOptions.series!"
+        [xaxis]="chartOptions.xaxis!"
+        [colors]="chartOptions.colors!"
+        [fill]="chartOptions.fill!"
+        [markers]="chartOptions.markers!"
+        [yaxis]="chartOptions.yaxis!"
       ></apx-chart>
     </app-card>
   </div>
@@ -154,8 +157,7 @@
         >0.85%<span class="text-c-blue ms-2"><i class="feather icon-arrow-up"></i>0.50%</span></h4
       >
       <span>Purchased</span>
-      <div class="app-card-footer">
-      </div>
+      <div class="app-card-footer"> </div>
     </app-card>
     <app-card [hidHeader]="true" footerClass="border border-top-0 p-0 overflow-hidden" [isCardFooter]="true">
       <h6>Conversions</h6>
@@ -163,8 +165,7 @@
         >0.85%<span class="text-c-red ms-2"><i class="feather icon-arrow-up"></i>0.50%</span></h4
       >
       <span>Purchased</span>
-      <div class="app-card-footer">
-      </div>
+      <div class="app-card-footer"> </div>
     </app-card>
     <app-card [hidHeader]="true" footerClass="border border-top-0 p-0 overflow-hidden" [isCardFooter]="true">
       <h6>Conversions</h6>
@@ -172,8 +173,7 @@
         >0.85%<span class="text-c-green ms-2"><i class="feather icon-arrow-up"></i>0.50%</span></h4
       >
       <span>Purchased</span>
-      <div class="app-card-footer">
-      </div>
+      <div class="app-card-footer"> </div>
     </app-card>
   </div>
   <div class="col-lg-8 col-md-12">

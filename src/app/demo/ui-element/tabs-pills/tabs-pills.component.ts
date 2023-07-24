@@ -9,6 +9,4 @@ import { SharedModule } from 'src/app/theme/shared/shared.module';
   templateUrl: './tabs-pills.component.html',
   styleUrls: ['./tabs-pills.component.scss']
 })
-export default class TabsPillsComponent {
-
-}
+export default class TabsPillsComponent {}

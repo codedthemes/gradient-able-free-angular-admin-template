@@ -16,8 +16,7 @@ export class NavGroupComponent implements OnInit {
   constructor(
     private location: Location,
     private locationStrategy: LocationStrategy
-  ) {
-  }
+  ) {}
 
   // life cycle event
   ngOnInit() {

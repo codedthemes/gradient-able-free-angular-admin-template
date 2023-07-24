@@ -1,7 +1,4 @@
-<ng-scrollbar
-  (clickOutside)="navMob()"
-  style="height: calc(100vh - 56px)"
->
+<ng-scrollbar (clickOutside)="navMob()" style="height: calc(100vh - 56px)">
   <div class="navbar-content">
     <ul class="nav pcoded-inner-navbar" (clickOutside)="fireOutClick()">
       <ng-container *ngFor="let item of navigations">

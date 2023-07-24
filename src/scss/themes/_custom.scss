@@ -77,9 +77,9 @@
   position: fixed;
   bottom: -50px;
   right: 30px;
-  box-shadow: 0 15px 50px rgba(0,0,0,.35);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
   opacity: 0;
   z-index: 9;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }

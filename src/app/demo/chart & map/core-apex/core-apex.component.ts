@@ -55,7 +55,7 @@ export type ChartOptions = {
   styleUrls: ['./core-apex.component.scss']
 })
 export default class CoreApexComponent implements OnInit {
- // public props
+  // public props
   // eslint-disable-next-line
   chartDB: any;
   lastDate!: number;
@@ -242,4 +242,3 @@ export default class CoreApexComponent implements OnInit {
     });
   }
 }
-

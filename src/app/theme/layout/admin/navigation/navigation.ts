@@ -30,8 +30,8 @@ export const NavigationItems: NavigationItem[] = [
         title: 'Dashboard',
         type: 'item',
         url: '/analytics',
-        icon: 'feather icon-home',
-      },
+        icon: 'feather icon-home'
+      }
     ]
   },
   {
@@ -50,40 +50,40 @@ export const NavigationItems: NavigationItem[] = [
             id: 'button',
             title: 'Button',
             type: 'item',
-            url: '/component/button',
+            url: '/component/button'
           },
           {
             id: 'badges',
             title: 'Badges',
             type: 'item',
-            url: '/component/badges',
+            url: '/component/badges'
           },
           {
             id: 'breadcrumb-pagination',
             title: 'Breadcrumb & Pagination',
             type: 'item',
-            url: '/component/breadcrumb-paging',
+            url: '/component/breadcrumb-paging'
           },
           {
             id: 'collapse',
             title: 'Collapse',
             type: 'item',
-            url: '/component/collapse',
+            url: '/component/collapse'
           },
           {
             id: 'tabs-pills',
             title: 'Tabs & Pills',
             type: 'item',
-            url: '/component/tabs-pills',
+            url: '/component/tabs-pills'
           },
           {
             id: 'typography',
             title: 'Typography',
             type: 'item',
-            url: '/component/typography',
-          },
-        ],
-      },
+            url: '/component/typography'
+          }
+        ]
+      }
     ]
   },
   {
@@ -125,7 +125,7 @@ export const NavigationItems: NavigationItem[] = [
         url: '/chart',
         classes: 'nav-item',
         icon: 'feather icon-pie-chart'
-      },
+      }
     ]
   },
   {
@@ -149,7 +149,7 @@ export const NavigationItems: NavigationItem[] = [
         url: '/tables',
         classes: 'nav-item',
         icon: 'feather icon-server'
-      },
+      }
     ]
   },
   {
@@ -203,5 +203,5 @@ export const NavigationItems: NavigationItem[] = [
         ]
       }
     ]
-  },
+  }
 ];

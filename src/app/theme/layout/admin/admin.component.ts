@@ -8,7 +8,7 @@ import { GradientConfig } from 'src/app/app-config';
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.scss']
 })
-export class AdminComponent  {
+export class AdminComponent {
   // public props
   navCollapsed: boolean;
   navCollapsedMob: boolean;
@@ -27,10 +27,7 @@ export class AdminComponent  {
 
     this.windowWidth = window.innerWidth;
 
-    if (
-      current_url === baseHref + '/layout/collapse-menu' ||
-      (this.windowWidth >= 992 && this.windowWidth <= 1024)
-    ) {
+    if (current_url === baseHref + '/layout/collapse-menu' || (this.windowWidth >= 992 && this.windowWidth <= 1024)) {
       GradientConfig.collapse_menu = true;
     }
 

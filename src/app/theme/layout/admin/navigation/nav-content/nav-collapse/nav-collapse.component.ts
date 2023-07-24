@@ -23,9 +23,8 @@ export class NavCollapseComponent {
 
   // public method
   navCollapse(e: MouseEvent) {
-
     let parent = e.target as HTMLElement;
-      parent = (parent as HTMLElement).parentElement as HTMLElement;
+    parent = (parent as HTMLElement).parentElement as HTMLElement;
 
     const sections = document.querySelectorAll('.pcoded-hasmenu');
     for (let i = 0; i < sections.length; i++) {

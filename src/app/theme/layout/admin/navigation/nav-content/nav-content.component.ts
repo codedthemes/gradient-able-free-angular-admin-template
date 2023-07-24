@@ -56,13 +56,13 @@ export class NavContentComponent implements OnInit {
       const up_parent = parent?.parentElement?.parentElement;
       const last_parent = up_parent?.parentElement;
       if (parent?.classList.contains('pcoded-hasmenu')) {
-          parent.classList.add('pcoded-trigger');
+        parent.classList.add('pcoded-trigger');
         parent.classList.add('active');
       } else if (up_parent?.classList.contains('pcoded-hasmenu')) {
-          up_parent.classList.add('pcoded-trigger');
+        up_parent.classList.add('pcoded-trigger');
         up_parent.classList.add('active');
       } else if (last_parent?.classList.contains('pcoded-hasmenu')) {
-          last_parent.classList.add('pcoded-trigger');
+        last_parent.classList.add('pcoded-trigger');
         last_parent.classList.add('active');
       }
     }

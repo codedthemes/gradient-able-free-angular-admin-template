@@ -5474,7 +5474,7 @@ ng-click-outside2@^11.2.0:
   dependencies:
     tslib ">=2.1.0"
 
-ngx-color-picker@*:
+ngx-color-picker@^14.0.0:
   version "14.0.0"
   resolved "https://registry.npmjs.org/ngx-color-picker/-/ngx-color-picker-14.0.0.tgz"
   integrity sha512-w28zx2DyVpIJeNsTB3T2LUI4Ed/Ujf5Uhxuh0dllputfpxXwZG9ocSJM/0L67+fxA3UnfvvXVZNUX1Ny5nZIIw==
@@ -6075,7 +6075,7 @@ prelude-ls@^1.2.1:
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier@^3.0.0:
+prettier@*:
   version "3.0.0"
   resolved "https://registry.npmjs.org/prettier/-/prettier-3.0.0.tgz"
   integrity sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==

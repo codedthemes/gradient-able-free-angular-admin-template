@@ -9,6 +9,4 @@ import { SharedModule } from 'src/app/theme/shared/shared.module';
   templateUrl: './typography.component.html',
   styleUrls: ['./typography.component.scss']
 })
-export default class TypographyComponent {
-
-}
+export default class TypographyComponent {}

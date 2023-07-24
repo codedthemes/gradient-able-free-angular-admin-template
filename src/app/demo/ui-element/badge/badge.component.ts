@@ -9,6 +9,4 @@ import { SharedModule } from 'src/app/theme/shared/shared.module';
   templateUrl: './badge.component.html',
   styleUrls: ['./badge.component.scss']
 })
-export default class BadgeComponent {
-
-}
+export default class BadgeComponent {}

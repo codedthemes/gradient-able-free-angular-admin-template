@@ -10,8 +10,8 @@ import { SharedModule } from 'src/app/theme/shared/shared.module';
   styleUrls: ['./collapse.component.scss']
 })
 export default class CollapseComponent {
-// Public props
-isCollapsed = true;
-isMultiCollapsed1 = true;
-isMultiCollapsed2 = true;
+  // Public props
+  isCollapsed = true;
+  isMultiCollapsed1 = true;
+  isMultiCollapsed2 = true;
 }

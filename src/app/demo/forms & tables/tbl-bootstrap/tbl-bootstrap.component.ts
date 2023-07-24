@@ -9,6 +9,4 @@ import { SharedModule } from 'src/app/theme/shared/shared.module';
   templateUrl: './tbl-bootstrap.component.html',
   styleUrls: ['./tbl-bootstrap.component.scss']
 })
-export default class TblBootstrapComponent {
-
-}
+export default class TblBootstrapComponent {}

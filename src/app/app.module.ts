@@ -41,7 +41,7 @@ import { SharedModule } from './theme/shared/shared.module';
     NavContentComponent,
     NavItemComponent,
     NavCollapseComponent,
-    NavGroupComponent,
+    NavGroupComponent
   ],
   imports: [BrowserModule, AppRoutingModule, SharedModule, FormsModule, ReactiveFormsModule, BrowserAnimationsModule],
   providers: [],
